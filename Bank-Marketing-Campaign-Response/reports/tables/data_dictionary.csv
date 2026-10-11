@@ -1,0 +1,22 @@
+column,group,type,meaning,known when?,treatment,observed in data
+age,Client,numeric,Client age in years,A. before contact,Keep (numeric),17 to 98
+job,Client,categorical,"Type of job (12 levels, includes 'unknown')",A. before contact,Keep (one-hot),12 levels
+marital,Client,categorical,Marital status (includes 'unknown'),A. before contact,"Keep; sensitive, audited in notebook 07",4 levels
+education,Client,categorical,Education level (includes 'unknown'),A. before contact,Re-coded as an ordinal number,8 levels
+default,Client,categorical,Has credit in default? yes / no / unknown,A. before contact,"Keep (one-hot, 'unknown' kept)",3 levels
+housing,Client,categorical,Has a housing loan?,A. before contact,Keep (one-hot),3 levels
+loan,Client,categorical,Has a personal loan?,A. before contact,Keep (one-hot),3 levels
+contact,Campaign,categorical,Contact channel: cellular / telephone,B. when planned,Keep (one-hot),2 levels
+month,Campaign,categorical,Month of the last contact,B. when planned,"Keep (one-hot); confounded with year, see section 9",10 levels
+day_of_week,Campaign,categorical,Weekday of the last contact,B. when planned,Keep (one-hot),5 levels
+duration,Campaign,numeric,Length of the last call in seconds,C. only after the call,EXCLUDE (leakage),0 to 4918
+campaign,Campaign,numeric,"Number of contacts to this client in THIS campaign, including the last",D. grey zone,Keep + log copy; sensitivity test in notebook 02,1 to 56
+pdays,History,numeric,Days since the client was last contacted in a PREVIOUS campaign; 999 = never,A. before contact,Flag + replace placeholder,0 to 999
+previous,History,numeric,Number of contacts before this campaign,A. before contact,Keep (numeric),0 to 7
+poutcome,History,categorical,Outcome of the previous campaign,A. before contact,Keep (one-hot),3 levels
+emp.var.rate,Macro,numeric,Employment variation rate (quarterly),D. grey zone,Excluded by default (time proxy),-3.4 to 1.4
+cons.price.idx,Macro,numeric,Consumer price index (monthly),D. grey zone,Excluded by default (time proxy),92.201 to 94.767
+cons.conf.idx,Macro,numeric,Consumer confidence index (monthly),D. grey zone,Excluded by default (time proxy),-50.8 to -26.9
+euribor3m,Macro,numeric,3-month Euribor interest rate (daily),D. grey zone,Excluded by default (time proxy),0.634 to 5.045
+nr.employed,Macro,numeric,Number of employees (quarterly),D. grey zone,Excluded by default (time proxy),4963.6 to 5228.1
+y,Target,binary,Did the client subscribe to a term deposit? yes / no,outcome,Target (1 = yes),2 levels

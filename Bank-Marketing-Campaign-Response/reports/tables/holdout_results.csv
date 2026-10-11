@@ -1,0 +1,7 @@
+model,roc_auc,pr_auc,precision_at_budget,recall_at_budget,lift_at_budget,accuracy_at_0_5
+Dummy (prior),0.5,0.324,0.304,0.187,0.937,0.676
+Logistic regression,0.691,0.502,0.559,0.345,1.725,0.548
+Random forest,0.687,0.507,0.59,0.364,1.821,0.701
+Hist. gradient boosting,0.659,0.463,0.531,0.328,1.64,0.597
+MLP (64-32),0.717,0.563,0.639,0.394,1.971,0.676
+Tuned Logistic regression,0.689,0.499,0.557,0.344,1.719,0.681

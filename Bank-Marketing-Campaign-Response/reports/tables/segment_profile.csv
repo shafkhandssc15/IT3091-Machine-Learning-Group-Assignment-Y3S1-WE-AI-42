@@ -1,0 +1,4 @@
+segment,clients_pct,median_age,top_job,pct_housing_loan,pct_university,actual_response_pct,mean_model_score_pct,pct_in_budget_list,call_priority
+2,30.9,56.0,retired,56.1,26.8,37.4,37.0,17.3,1
+1,29.0,32.0,admin.,0.0,39.1,31.2,30.4,21.7,2
+0,40.0,32.0,admin.,95.9,38.5,29.4,29.7,20.8,3

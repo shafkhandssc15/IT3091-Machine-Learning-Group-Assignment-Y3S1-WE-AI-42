@@ -1,0 +1,8 @@
+policy,called_pct,precision,subscribers_captured_pct,profit_per_client
+Call nobody,0.0,,0.0,0.0
+Call everyone (no model),100.0,0.324,100.0,2.241
+Model: top 20% of each block (fixed capacity),19.997,0.436,26.925,0.673
+Random: 20% of clients (expected),20.0,0.324,20.0,0.448
+Model: c/v=0.10 on raw scores (no recalibration),37.991,0.509,59.673,1.554
+Model: c/v=0.10 on rolling-recalibrated probabilities,71.161,0.4,87.914,2.137
+Oracle threshold 0.01 (NOT deployable),99.871,0.324,99.801,2.236

@@ -1,0 +1,53 @@
+model_input,source_column,treatment,mean_after,std_after
+num__age,age,median-imputed + standardised,-3.3132776020871703e-16,1.0
+num__campaign,campaign,median-imputed + standardised,-2.7610646684059753e-17,0.9999999999999999
+num__campaign_log,campaign_log,median-imputed + standardised,4.8318631697104564e-17,1.0
+num__pdays,pdays,median-imputed + standardised,2.7610646684059753e-17,0.9999999999999999
+num__previous,previous,median-imputed + standardised,0.0,0.9999999999999999
+num__was_contacted_before,was_contacted_before,median-imputed + standardised,-1.3805323342029877e-17,1.0
+num__education_ord,education_ord,median-imputed + standardised,-3.1752243686668717e-16,1.0000000000000002
+num__missingindicator_education_ord,education_ord,missing-value indicator (1 = was 'unknown'),8.283194005217926e-17,1.0
+cat__job_admin.,job,one-hot indicator,0.2440194292653309,0.429504304293162
+cat__job_blue-collar,job,one-hot indicator,0.24159077109896782,0.4280475095346006
+cat__job_entrepreneur,job,one-hot indicator,0.03828172434729812,0.19187556886767945
+cat__job_housemaid,job,one-hot indicator,0.02671523982999393,0.16124991718081547
+cat__job_management,job,one-hot indicator,0.07285974499089254,0.25990614181037475
+cat__job_retired,job,one-hot indicator,0.03002428658166363,0.17065412036316543
+cat__job_self-employed,job,one-hot indicator,0.03509411050394657,0.18401769999617795
+cat__job_services,job,one-hot indicator,0.10088038858530662,0.3011702770596464
+cat__job_student,job,one-hot indicator,0.01053430479659988,0.10209472669561447
+cat__job_technician,job,one-hot indicator,0.16918639951426837,0.3749164730092113
+cat__job_unemployed,job,one-hot indicator,0.022738312082574378,0.14906804233708118
+cat__job_unknown,job,one-hot indicator,0.008075288403157256,0.0894990397734137
+cat__marital_divorced,marital,one-hot indicator,0.11435944140862174,0.31824732452815646
+cat__marital_married,marital,one-hot indicator,0.6292349726775956,0.4830096498384076
+cat__marital_single,marital,one-hot indicator,0.25452337583485124,0.4355929602145589
+cat__marital_unknown,marital,one-hot indicator,0.0018822100789313903,0.04334359657608213
+cat__default_no,default,one-hot indicator,0.7565573770491804,0.42916000778456137
+cat__default_unknown,default,one-hot indicator,0.24335154826958105,0.42910554904869125
+cat__default_infrequent_sklearn,default,one-hot indicator,9.107468123861566e-05,0.009542870985246157
+cat__housing_no,housing,one-hot indicator,0.4610200364298725,0.4984782467069867
+cat__housing_unknown,housing,one-hot indicator,0.02370977534911961,0.15214342543144577
+cat__housing_yes,housing,one-hot indicator,0.5152701882210079,0.4997667669540413
+cat__loan_no,loan,one-hot indicator,0.8238615664845172,0.3809379027534469
+cat__loan_unknown,loan,one-hot indicator,0.02370977534911961,0.15214342543144577
+cat__loan_yes,loan,one-hot indicator,0.15242865816636308,0.35943589461260705
+cat__contact_cellular,contact,one-hot indicator,0.5734972677595629,0.4945686520917791
+cat__contact_telephone,contact,one-hot indicator,0.42650273224043717,0.4945686520917791
+cat__month_apr,month,one-hot indicator,0.07459016393442623,0.2627288933076483
+cat__month_aug,month,one-hot indicator,0.15704310868245294,0.3638414087178701
+cat__month_jul,month,one-hot indicator,0.20282331511839707,0.40210199945135877
+cat__month_jun,month,one-hot indicator,0.13278688524590163,0.3393442622950819
+cat__month_mar,month,one-hot indicator,0.008561020036429872,0.09212887154614302
+cat__month_may,month,one-hot indicator,0.3121129326047359,0.46335564084794256
+cat__month_nov,month,one-hot indicator,0.10974499089253188,0.31257163637561547
+cat__month_oct,month,one-hot indicator,0.0020340012143290833,0.0450540126225089
+cat__month_infrequent_sklearn,month,one-hot indicator,0.00030358227079538557,0.017420967498972158
+cat__day_of_week_fri,day_of_week,one-hot indicator,0.19077109896782027,0.39290900570797616
+cat__day_of_week_mon,day_of_week,one-hot indicator,0.20737704918032787,0.40542793274956745
+cat__day_of_week_thu,day_of_week,one-hot indicator,0.21250758955676988,0.4090820381507129
+cat__day_of_week_tue,day_of_week,one-hot indicator,0.19146933819064968,0.3934575335706311
+cat__day_of_week_wed,day_of_week,one-hot indicator,0.1978749241044323,0.39839733748495043
+cat__poutcome_failure,poutcome,one-hot indicator,0.06396478445658774,0.24469019352236007
+cat__poutcome_nonexistent,poutcome,one-hot indicator,0.9309350333940498,0.2535645815047306
+cat__poutcome_success,poutcome,one-hot indicator,0.005100182149362477,0.07123321059313417

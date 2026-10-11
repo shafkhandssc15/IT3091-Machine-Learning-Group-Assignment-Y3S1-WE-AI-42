@@ -1,0 +1,9 @@
+check,result,severity,action
+Exact duplicate rows,"12 of 41,188",minor,"drop, keep first, keep order"
+True missing cells (NaN),0,ok,none needed
+Hidden missing values ('unknown'),"default 20.9%, education 4.2%, housing 2.4%, loan 2.4%, job 0.8%, marital 0.2%",check,keep as own category; education -> NaN + indicator
+Sentinel value pdays = 999,96.3% of rows,check,flag + replace by 0
+Constant columns,none,ok,none needed
+Post-call column present,duration (call length in seconds),critical,exclude from every deployable model
+Zero-length calls,4 rows with duration = 0,minor,irrelevant once duration is excluded
+Age range,17 to 98 years; 5 clients under 18,ok,"keep; age stays numeric (sensitive attribute, audited in notebook 07)"
